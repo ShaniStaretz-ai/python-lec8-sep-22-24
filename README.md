@@ -14,8 +14,14 @@
     grades:list[int]=[] - the list grades contains int values and init to empty list []
     ```
    * if grades == if len(grades) ==if len(grades)
-   * grades[-1]= when give the last value in the list
+   * grades[-1]=grades[:len(grades)-1]= when give the last value in the list
    * grades[length+1]= will ERROR list index out of range
+   * grades[index start:end(not included),steps]:
+     * grades[:3] = will return the first 3 numbers
+     * grades[:len(grades)]=grades[:]
+     * grades[-1::-1]=grades[-1:-len(grades)-1:-1]= reverse to the list grades
+   * grades.insert(index, value)= add to the list in grades[index]=value and push all after to the right. 
+     
 ## Extra:
 
 1)  keyword pass: can be used in order to make preparation without getting compilation errors.
