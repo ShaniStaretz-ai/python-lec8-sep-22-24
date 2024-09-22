@@ -26,4 +26,4 @@ for _ in range(10):
     l2.append(choice([1, 4, 9, -2]))
 print("mean:", mean(l2))
 
-#DOTO: test
+#TODO: test
