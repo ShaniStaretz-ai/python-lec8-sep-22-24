@@ -9,7 +9,11 @@ while True:
     number: int = int(input("Enter number:"))
     if number == SENTINEL: #break point
         break;
-    index = number // MULTI_10 - 1  # since the values are in multiples 10,
+    
+    if number<=10:
+        index=0
+    else:
+        index = number // MULTI_10 - 1  # since the values are in multiples 10,
     while l3[index] < number:  # find the right index
         index += 1
     l3.insert(index, number) #when find the right index add to the list
