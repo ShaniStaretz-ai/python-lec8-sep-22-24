@@ -17,7 +17,7 @@ print("div 10:", l1[9::10])
 print("99-66 step 3:", l1[98:62:-3])
 
 l1.insert(len(l1) // 2, 999)
-print("after insert:", l1[:])
+print("after insert:", l1)
 
 l1.pop();
-print("after pop last:", l1[:])
+print("after pop last:", l1)
