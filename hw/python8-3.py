@@ -1,7 +1,7 @@
 l3: list[int] = []
 MULTI_10 = 10
 SENTINEL: int = -999
-for i in range(MULTI_10, MULTI_10 ** 2 + MULTI_10, MULTI_10):
+for i in range(MULTI_10, MULTI_10 ** 2 +1, MULTI_10):
     l3.append(i)
 print(l3)
 
