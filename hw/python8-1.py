@@ -4,8 +4,6 @@ for i in range(1, 101):
 print("first value:", l1[0])
 print("last value:", l1[-1])
 print("length:", len(l1))
-# l2:list[int]=[];
-# for i in range(3,13)
 print("3-12:", l1[2:12])
 print("80-end:", l1[79::])
 print("start-17", l1[:17])
