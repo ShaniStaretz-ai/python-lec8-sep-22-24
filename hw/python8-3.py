@@ -9,8 +9,12 @@ while True:
     number: int = int(input("Enter number:"))
     if number == SENTINEL:  # break point
         break;
-
-    if number <= 10:
+    if number > l3[len(l3) - 1]:
+        index = len(l3);
+        l3.insert(index, number);
+        print(l3)
+        continue;
+    elif number <= 10:
         index = 0
     else:
         index = number // MULTI_10 - 1  # since the values are in multiples 10,
