@@ -2,7 +2,6 @@ from statistics import mean
 
 l2: list[float] = [];
 count_2_above = 0;
-total: int = 0
 SENTINEL: int = -999
 MIN_HEIGHT: float = 1.60
 MAX_HEIGHT: float = 3.0
@@ -13,11 +12,11 @@ while True:
         break;
     if height < MIN_HEIGHT or height > MAX_HEIGHT:
         continue;
-    total += 1
+
     if height > 2.0:
         count_2_above += 1;
     l2.append(height)
-print("total:", total)
+print("total:", len(l2))
 print("l2:", l2)
 if l2:
     print("highest:", max(l2))
